@@ -1,0 +1,43 @@
+#include<stdio.h>
+
+int main()
+{
+	int k=8,l=8,p,q;
+    int t,i,a=0,b=7;
+    scanf("%d",&t);
+    for(i=0;i<t;i++)
+    {
+    	int n;
+    	scanf("%d",&n);
+    	p= (n-a);
+    	q= (n-b);
+    	if(p<0)
+    		p=-p;
+    	if(q<0)
+    		q=-q;
+    	if(p<q)
+    	{
+    		printf("A\n");
+    		a=n;
+		}
+		else if(p>q)
+		{
+			printf("B\n");
+			b=n;
+		}
+		else
+		{
+			if(a<n)
+			{
+			a=n;
+			
+			printf("A\n");
+			}
+			else
+			{
+			b=n;
+			printf("B\n");
+			}
+		}
+	}
+}
