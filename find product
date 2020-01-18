@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include<math.h>
+
+int main()
+{
+	int n;
+	int a[1000],i,p=1;
+	long long unsigned answer=1;
+	unsigned r=pow(10,9)+7;
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		scanf("%ld",&a[i]);
+		answer=(answer*a[i])%r;
+	}
+	printf("%ld",answer);
+}
+
