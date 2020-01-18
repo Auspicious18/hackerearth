@@ -1,0 +1,51 @@
+#include <stdio.h>
+int main()
+{
+	int num,i,x,a,p;
+	char w;
+	scanf("%d", &num);
+	//printf("Input number is %d.\n", num);
+	for(i=0;i<num;i++)
+	{
+	    scanf("%d",&a);
+	    {
+			if((a-1)%12==0)
+	    		printf("%d",a+11);
+	    	else if((a-2)%12==0)
+	    		printf("%d",a+9);
+	    	else if((a-3)%12==0)
+	    		printf("%d",a+7);
+	    	else if((a-4)%12==0)
+	    		printf("%d",a+5);
+	    	else if((a-5)%12==0)
+	    		printf("%d",a+3);
+	    	else if((a-6)%12==0)
+	    		printf("%d",a+1);
+	    		
+	    	else if((a-7)%12==0)
+	    		printf("%d",a-1);
+			else if((a-8)%12==0)
+	    		printf("%d",a-3);
+			else if((a-9)%12==0)
+	    		printf("%d",a-5);
+			else if((a-10)%12==0)
+	    		printf("%d",a-7);
+			else if((a-11)%12==0)
+	    		printf("%d",a-9);
+			else //if((a-7)%12==0)
+	    		printf("%d",a-11);	    		
+	    	}	
+	    {
+	            if(a%6==0)
+	                printf(" WS\n");
+	            else if((a-1)%6==0)
+	                printf(" WS\n");
+	            else if((a-3)%6==0)
+	               printf(" AS\n");
+	            else if((a-4)%6==0)
+	                printf(" AS\n");
+	            else
+	                printf(" MS\n");
+	    }
+    }
+}
