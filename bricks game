@@ -1,0 +1,46 @@
+
+// Sample code to perform I/O:
+#include <stdio.h>
+
+int main(){
+	int num,n=0,p=1,q,i=1,w=0,r=1;
+	scanf("%d", &num);
+	    while(r<num)
+	    {    
+	        q=p*2;	        
+	        {
+	        //	printf("Patlu=    %d\n",p);
+	        	 r=r+q;
+	           if(r>num)
+	           {
+	               printf("Motu");
+	               break;
+	           }
+	           else if(r==num)
+	           {
+	               printf("Patlu");
+	               break;
+	    	   }
+	        }
+	       p=p+1;
+	       // printf("Motu=%d\n",q);
+	        r=r+p;
+	        {
+	            if(r>num)
+	            { 
+	                printf("Patlu");
+	                break;
+	            }
+	            else if(r==num)
+	            {
+	            	printf("Motu");
+	            	break;
+				}
+	        }
+	        
+	        
+	    }
+	
+	return 0;
+}
+
