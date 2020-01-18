@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+	char a[10000],b[10000],i,j;
+	int t;
+	scanf("%d",&t);
+	for(i=0;i<t;i++)
+	{
+		int l=0,p,q,o,k=0,j=0;
+		scanf("%s",a);
+		scanf("%s",b);
+		p=strlen(a);
+		q=strlen(b);
+		
+		while(j<p)
+		{
+			for(k=0;k<q;k++)
+			{
+				if(a[j]==b[k])
+				{	l=l+2;
+					b[k]=0;
+				   break;
+				}
+				
+			}
+			j++;
+		}
+		o=p+q-(l);
+		printf("%d\n",o);
+	}
+	
+}
