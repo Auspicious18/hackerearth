@@ -1,0 +1,30 @@
+#include<stdio.h>
+
+int main()
+{
+    int n,i;
+    scanf("%d",&n);
+    char 	a[n];
+    scanf("%s",a);
+    int p=1;
+    for(i=0;i<strlen(a)-1;i++)
+    {
+    	if(a[i]=='H'&&a[i+1]=='H')
+			p=p*0;
+	}
+	if(p==0)
+		{
+			printf("NO");
+		}
+	else
+		{
+			for(i=0;i<strlen(a);i++)
+			{
+				if(a[i]=='.')
+					a[i]='B';
+			}
+			printf("YES\n");
+	printf("%s",a);
+		}
+		
+}
